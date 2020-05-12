@@ -27,5 +27,4 @@ export class GamesService {
   saveGame(game: Game){
     return this.http.post(`${this.API_URI}/games`, game);
   }
-
 }

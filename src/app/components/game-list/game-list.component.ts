@@ -7,11 +7,17 @@ import { GamesService } from '../../services/games.service';
 })
 export class GameListComponent implements OnInit {
 
+  value: string;
+  name: string;
+  mivalor: string;
   games : any = [];
   constructor(private gamesService: GamesService) { }
 
   ngOnInit(): void {
     this.getGames();
+    this.value = 'click';
+    this.name = 'jli';
+    this.mivalor = 'hola';
   }
   getGames(){
     this.gamesService.getGames()
